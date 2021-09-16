@@ -1,0 +1,45 @@
+h1 {
+    color: red;
+    font-family: monospace;
+}
+
+p {
+    font-family: monospace;
+}
+
+.box-model {
+    /* 16px per rem by default */
+    width: 15rem;
+    height: 15rem;
+    background: limegreen;
+    border: 1rem solid orange;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.child {
+    width: 50%;
+    height: 50%;
+    background: purple;
+}
+
+.em-stuff {
+
+}
+
+/* comments can be inserted quickly with CTRL + / */
+
+/* ".em-text" is an example of a selector */
+.em-text {
+    font-size: 2rem;
+    background: lightblue;
+    padding: 1em; /* em(s) scale with the font size of the parent: in this case, 2rem (or 32px) */
+    text-align: center;
+    /* max-content will make the block-level element only as wide as its contents */
+    width: max-content;
+}
+
+/* IDs should only be used once. They have "more power" than classes – so their positioning in the CSS document does not matter. */
+#special-box {
+    background: yellow;
+}

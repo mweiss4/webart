@@ -1,0 +1,20 @@
+img {
+    width: 50%;
+    max-width: 200px;
+    min-width: 100px;
+    /* forces block element behavior */
+    display: block;
+    margin-bottom: 1rem;
+    border: .1rem solid black;
+}
+
+#special-img {
+    width: 200px;
+    height: 100px;
+    /* will crop image within dimensions specified */
+    object-fit: cover;
+}
+
+#video {
+    width: 300px;
+}
