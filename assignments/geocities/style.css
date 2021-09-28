@@ -1,16 +1,14 @@
-* { margin: 0; padding: 0; }
-
 /* Space Grotesk */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
-/* Press Start 2P */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Tourney */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Tourney:ital,wght@0,100;0,200;0,900;1,100;1,200;1,900&display=swap');
 
-/* Museo Moderno */
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400&display=swap');
+* { margin: 0; padding: 0; }
 
 body {
     background-image: url('media/starry-background.gif');
+    background-attachment: fixed;
     max-width: 800px;
     margin: 0 auto;
     background-color: black;
@@ -27,57 +25,71 @@ main {
 }
 
 .under-construction {
-    margin-bottom: 50px;
     position: absolute;
-    width: 800px;
+    width: 820px;
     top: 80px;
+
 }
 
 header {
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 35px;
 }
 
 h1 {
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'Tourney', cursive;
     text-align: center;
-    font-size: 52px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    font-size: 51px;
+    font-weight: 200;
+    margin-bottom: 25px;
     text-transform: capitalize;
     
     color: #ff2e39;
-    text-shadow: 0px 0px 10px #ff465e;
 }
 
 h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 20px;
+    font-family: 'Space Grotesk', monospace;
+    font-size: 18px;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.025em;
     color: #FFFFFF;
     margin-bottom: 5px;
 }
 
 h3 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    max-width: 60ch;
+    text-align: left;
+    margin: 0 auto 10px auto;
+
+}
+
+h4 {
+    font-family: 'Space Grotesk', monospace;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 12px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.025em;
     color: #FFFFFF;
 }
 
 p {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
+    font-family: 'Space Grotesk', monospace;
+    font-size: 12px;
+    font-weight: 400;
     color: white;
     max-width: 60ch;
     text-align: center;
     margin: 0 auto;
 
+}
+
+a {
+    color: #FFFFFF;
 }
 
 .testbox {
@@ -86,21 +98,13 @@ p {
     background-color: #FF0000;
 }
 
-
-
-
-
-
 .album-module {
     opacity: 100%;
     display: inline-block;
     position: relative;
     width: 31%;
     height: 300px;
-    /* background-color: red; */
     margin: 1%;
-    /* border: 1px solid #2a3f68; */
-    /* border-radius: 2px; */
 }
 
 .album-image {
@@ -108,17 +112,25 @@ p {
     margin-bottom: 5px;
     border: 1px solid #2a3f688c;
     border-radius: 2px;
+    transition: box-shadow 500ms, border 200ms;
+}
+
+.album-image:hover {
+    transition: box-shadow 2s, border 200ms;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 10px 1px #FFFFFF;
 }
 
 .album-genre {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
     background-color: #ff2e39;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Tourney', cursive;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 900;
     line-height: 12px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 2px;
@@ -129,9 +141,31 @@ p {
     /* margin-left: 5px; */
 }
 
-.pingpong {
+.foundation {
+    width: 100%;
+    height: 40px;
+}
+
+.pingpong-container {
     position: fixed;
-    margin: auto auto;
-    bottom: -3px;
+    bottom: 0px;
     width: 800px;
+    height: 40px;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.pingpong-gradient {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0px;
+    left: 1.5%;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+}
+
+.pingpong {
+    margin: 0 auto;
+    position: absolute;
+    bottom: -3px;
+    width: 97%;
 }
