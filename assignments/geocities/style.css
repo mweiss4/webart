@@ -27,7 +27,8 @@ main {
 .under-construction {
     position: absolute;
     width: 820px;
-    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 40px);
 
 }
 
@@ -159,11 +160,12 @@ a {
     height: 35px;
     position: absolute;
     bottom: 0px;
-    left: 1.5%;
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+    /* background-color: red; */
 }
 
 .pingpong {
+    left: 1.5%;
     margin: 0 auto;
     position: absolute;
     bottom: -3px;
